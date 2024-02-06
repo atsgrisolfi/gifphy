@@ -2,7 +2,7 @@
 
 1. **main.dart**: O ponto de entrada da sua aplicação Flutter. Aqui, você configura o `MaterialApp`, define rotas, e inicializa o GetX ou qualquer outro gerenciador de estado que você está usando.
 
-2. **binding**: Esta classe é responsável por vincular ou associar as dependências necessárias para a página inicial (``). Aqui, você instancia o `FiguraRepository` e o `Controller` usando o GetX. O `FiguraRepository` é usado para fazer solicitações à API, enquanto o `Controller` é responsável por gerenciar o estado da página inicial.
+2. **binding**: Esta classe é responsável por vincular ou associar as dependências necessárias para a página inicial (`page`). Aqui, você instancia o `FiguraRepository` e o `Controller` usando o GetX. O `FiguraRepository` é usado para fazer solicitações à API, enquanto o `Controller` é responsável por gerenciar o estado da página inicial.
 
 3. **controller**: Este é o controlador da sua página inicial. Ele recebe dados do `FiguraRepository`, processa-os conforme necessário e os disponibiliza para a página inicial.
 
