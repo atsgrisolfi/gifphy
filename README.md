@@ -2,11 +2,11 @@
 
 1. **main.dart**: O ponto de entrada da sua aplicação Flutter. Aqui, você configura o `MaterialApp`, define rotas, e inicializa o GetX ou qualquer outro gerenciador de estado que você está usando.
 
-2. **HomePageBinding**: Esta classe é responsável por vincular ou associar as dependências necessárias para a página inicial (`HomePage`). Aqui, você instancia o `FiguraRepository` e o `HomePageController` usando o GetX. O `FiguraRepository` é usado para fazer solicitações à API, enquanto o `HomePageController` é responsável por gerenciar o estado da página inicial.
+2. **Binding**: Esta classe é responsável por vincular ou associar as dependências necessárias para a página inicial (``). Aqui, você instancia o `FiguraRepository` e o `Controller` usando o GetX. O `FiguraRepository` é usado para fazer solicitações à API, enquanto o `Controller` é responsável por gerenciar o estado da página inicial.
 
-3. **HomePageController**: Este é o controlador da sua página inicial. Ele recebe dados do `FiguraRepository`, processa-os conforme necessário e os disponibiliza para a página inicial.
+3. **Controller**: Este é o controlador da sua página inicial. Ele recebe dados do `FiguraRepository`, processa-os conforme necessário e os disponibiliza para a página inicial.
 
-4. **HomePage**: Esta é a página que é renderizada na tela. Ela usa o `HomePageController` para acessar os dados necessários. Quando o `HomePageController` é inicializado, ele busca os dados do `FiguraRepository` (Repository pode por exemplo acessar uma API). Quando os dados estão disponíveis, o `HomePageController` os fornece à `HomePage`, que então renderiza esses dados na interface do usuário.
+4. **Page**: Esta é a página que é renderizada na tela. Ela usa o `Controller` para acessar os dados necessários. Quando o `Controller` é inicializado, ele busca os dados do `FiguraRepository` (Repository pode por exemplo acessar uma API). Quando os dados estão disponíveis, o `Controller` os fornece à ``, que então renderiza esses dados na interface do usuário.
 
 A injeção de dependência é um conceito fundamental em Flutter e é muito útil para gerenciar a complexidade e a reutilização do código em aplicativos maiores.
 
